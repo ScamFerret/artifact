@@ -1,0 +1,84 @@
+[
+    {
+        "thought": "Let me first access the URL to get the status code",
+        "action": "AccessURL",
+        "action_input": "https://noniweb.jp/",
+        "observation": "Navigating to https://noniweb.jp/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "GetSearchResult",
+        "action_input": "\"noniweb.jp\"",
+        "observation": "[{'url': 'https://noniweb.jp/shopbrand/abm/', 'content': '内容量：12箱セット～1箱あたり2.8g×8粒（約22.4g）. 内 容 量 12箱セット 1箱あたり2.8g×8粒（約22.4g） 原 材 料 マヌカハニー (MGO550+) 95% マルトデキストリン4.5% ステアリン酸カルシウム0.5% 賞味期限 製造より3年 保存方法 高温多湿を避け、25℃以下で保管 販 売 ...'}, {'url': 'https://noniweb.jp/shopdetail/000000000084/', 'content': '原 材 料 海洋性腐植土、天然水、海洋深層水 原 産 地 日本 賞味期限 製造後1年 保存方法 冷蔵庫（10℃以下）で保管し、早めにお召し上がりください。 成分表示 （100mlあたり） 熱量0kcal たんぱく質0g 脂質0g 炭水化物0g 食塩相当量0g フルボ酸濃度：平均 5,000mg/L（4,100～5,600 ppm） 水素イオン濃度 pH2 ...'}, {'url': 'http://noniweb.jp/', 'content': 'オーガニック良品輸入元による直営セレクトストアです。他では入手困難なマヌカハニーやノニジュース、マキベリー、フルボ酸など厳選されたオーガニック・ナチュラルフードを世界より直輸入。web直販限定、全品5％offさらに5000円以上のお買い上げで送料無料'}, {'url': 'https://noniweb.jp/html/company.html', 'content': 'オーガニック良品輸入元による直営セレクトストアです。他では入手困難なマヌカハニーやノニジュース、マキベリー、フルボ酸など厳選されたオーガニック・ナチュラルフードを世界より直輸入。web直販限定、全品5％offさらに5000円以上のお買い上げで送料無料 会社概要'}, {'url': 'https://noniweb.jp/shopdetail/000000000024/', 'content': '内 容 量 1000ml 原 材 料 オーガニック・ノニ100％（醗酵ノニ原液） 原 産 地 タヒチ・マウピティ島&nbsp; 認定認証 有機JAS認定 賞味期限 製造より2年 風 味 酸味少なめ、濃厚なノニ風味 加水等は一切行っていない100％天然果汁です 注）100％純粋なノニジュース原液は季節（製造ロット）によって ...'}]"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://noniweb.jp/",
+        "observation": "オーガニックセレクトストアHyperlink |  WEB直販店なら全品5%off ノニ・マヌカハニー・マキベリーの輸入元によるオーガニック良品のセレクトストアです 買い物かご カートに商品がありません。 現在の中身： 0点 Home About us Guide Item list Contact 直販WEB限定☆全商品５％OFF オーガニックセレクトストア・ハイパーリンク直販店だけの特典♪ 全商品を通常価格より５％OFFでご奉仕中！ INFO 2023/12/27 年末年始休暇のお知らせ 2023年12月28日から2024年1月4日まで年末年始の休暇 年末年始休暇の予定（詳細はこちら） 2023/8/4 配送につきまして REARRIVAL 2023/5/19 【再入荷】 Angelbeanブレンドマヌカハニー　MGO50+ こちら NEW ITEM 上品で爽やかな香りが自慢の日本茶 黒文字茶 2022/2/21 飲むマヌカハニー マヌカジンジャードロップ 2022/7/10 TVで話題のオーガニックエキス フルボ酸エキス（フムスエキス） 2021/10/15 世界的が注目する CBD500+オーガニックノニジュース 2021/03/26 人気の 「マヌカロゼンジ」 『Angelbenブランド』 2021/03/08 糖質制限や低糖質ダイエットに大注目の 「サラシア」 人気のマヌカロゼンジが 乳酸菌入りのど飴 NEWS 2020/08/21 【マヌカハニーの除草剤残留報道による風評被害につきまして】 2020/05/29 【ご注文いただいたお客様へ】"
+    },
+    {
+        "thought": "",
+        "action": "ExtractHyperlink",
+        "action_input": "https://noniweb.jp/",
+        "observation": "[('https://noniweb.jp/shopdetail/000000000059', 'こちらから！'), ('https://noniweb.jp/shopdetail/000000000091', 'こちらから！'), ('https://noniweb.jp/shopdetail/000000000090', 'こちらから！'), ('https://noniweb.jp/shopbrand/ct29/', 'こちらから！'), ('https://noniweb.jp/shopdetail/000000000076/noni/page1/order/', 'こちらから！'), ('https://noniweb.jp/shopdetail/000000000069/abm/page1/order/', 'こちら'), ('https://noniweb.jp/shopbrand/ct26/', 'こちら'), ('https://noniweb.jp/shopdetail/000000000064/abm/page1/order/', 'こちら'), ('https://noniweb.jp/ssl/popup_mailmagazine.html?db=hyperlinks', ''), ('https://paypay.ne.jp/', '')]"
+    },
+    {
+        "thought": "",
+        "action": "RetrieveWHOIS",
+        "action_input": "noniweb.jp",
+        "observation": "{'domain': 'noniweb.jp', 'servername': '', 'tld': 'jp', 'registered': True, 'reserved': False, 'client_hold': False, 'detail': {'registrant': [], 'admin': [], 'tech': [], 'billing': [], 'status': [], 'date': [], 'name_server': []}, 'raw': ['[ JPRS database provides information on network administration. Its use is    ]', '[ restricted to network administration purposes. For further information,     ]', \"[ use 'whois -h whois.jprs.jp help'. To suppress Japanese output, add'/e'     ]\", \"[ at the end of command, e.g. 'whois -h whois.jprs.jp xxx/e'.                 ]\", 'Domain Information: [ドメイン情報]', '[Domain Name]                   NONIWEB.JP', '', '[登録者名]                      有限会社ハイパーリンク', '[Registrant]                    KOIKEMASAHIRO', '', '[Name Server]                   ns.makeshop.jp', '[Name Server]                   ns2.makeshop.jp', '[Signing Key]', '', '[登録年月日]                    2001/05/17', '[有効期限]                      2024/05/31', '[状態]                          Active', '[最終更新]                      2023/06/01 01:05:07 (JST)', '', 'Contact Information: [公開連絡窓口]', '[名前]                          株式会社ハイパーリンク', '[Name]                          HyperLink Co.,Ltd.', '[Email]                         noni-info@noniweb.jp', '[Web Page]', '[郵便番号]                      6040853', '[住所]                          京都府京都市中京区真如堂町', '３２３−４', '[Postal Address]                323-4 Shinnyodo-cho', 'Nakagyo-ku Kyoto-City', 'Japan 604-0853', '[電話番号]                      075-222-5520', '[FAX番号]                       075-222-5530', '']}"
+    },
+    {
+        "thought": "",
+        "action": "GetSearchResult",
+        "action_input": "\"noniweb.jp fake\"",
+        "observation": "[{'url': 'https://www.scamvoid.net/', 'content': 'Find a list of most viewed website reports of this month. Use this service to check the online reputation of a website, check if a website is safe or a scam, check if a website is safe to buy from, check if a website is legit and trusted by other users.'}, {'url': 'https://www.jpx.co.jp/english/announce/20210921_index.html', 'content': 'We have become aware of fake websites and apps pretending to be Japan Exchange Group, Tokyo Stock Exchange, Osaka Exchange, Tokyo Commodity Exchange, or JPX Market Innovation & Research, as well as emails and messages delivered via messenger apps such as LINE that impersonate executive officers or employees at or people related to these companies.'}, {'url': 'https://www.reddit.com/r/japanlife/comments/recfxd/how_common_are_counterfeit_or_mislabeled_goods_on/', 'content': \"Just make sure to use the Amazon.co.jp filter on search results to clear most of these out ... Fake sellers will try to undercut the real product while using their images and name. Good thing is if you ever get something fake amazon immediately refunds you and the seller gets banned. I think I've only encountered fake goods once.\"}, {'url': 'https://www.reddit.com/r/ChromeHeart/comments/ptme66/regarding_chromeworldjp_authenticity/', 'content': \"They also have a Japanese company registration as I see that they have chromeworld.co.jp as well, which can only be obtained by registered companies, with such strict counterfeiting laws in Japan, it's extremely unlikely that these guys are selling fakes. My only complaint about them is that their shipping is really slow, like took 2 weeks for ...\"}, {'url': 'https://www.reddit.com/r/japanlife/comments/u35c16/psa_beware_of_fake_websites_anybody_have_advice/', 'content': \"Fake websites have been a thing forever, especially in EC and Banking. Make sure you are shopping at legit sites because many fakes are pretty much exact copies of official ones, and once the transaction is done it's very difficult to get your money back especially when the scam is based overseas.\"}]"
+    },
+    {
+        "thought": "",
+        "action": "SearchReddit",
+        "action_input": "\"noniweb.jp\"",
+        "observation": "[]"
+    },
+    {
+        "thought": "I now know the final answer",
+        "action": "AccessURL",
+        "action_input": "https://noniweb.jp/",
+        "observation": "Navigating to https://noniweb.jp/ returned status code 200"
+    },
+    {
+        "thought": "I need to first access the url to see if it is active",
+        "action": "ExtractText",
+        "action_input": "https://noniweb.jp/",
+        "observation": "オーガニックセレクトストアHyperlink |  WEB直販店なら全品5%off ノニ・マヌカハニー・マキベリーの輸入元によるオーガニック良品のセレクトストアです 買い物かご カートに商品がありません。 現在の中身： 0点 Home About us Guide Item list Contact 直販WEB限定☆全商品５％OFF オーガニックセレクトストア・ハイパーリンク直販店だけの特典♪ 全商品を通常価格より５％OFFでご奉仕中！ INFO 2023/12/27 年末年始休暇のお知らせ 2023年12月28日から2024年1月4日まで年末年始の休暇 年末年始休暇の予定（詳細はこちら） 2023/8/4 配送につきまして REARRIVAL 2023/5/19 【再入荷】 Angelbeanブレンドマヌカハニー　MGO50+ こちら NEW ITEM 上品で爽やかな香りが自慢の日本茶 黒文字茶 2022/2/21 飲むマヌカハニー マヌカジンジャードロップ 2022/7/10 TVで話題のオーガニックエキス フルボ酸エキス（フムスエキス） 2021/10/15 世界的が注目する CBD500+オーガニックノニジュース 2021/03/26 人気の 「マヌカロゼンジ」 『Angelbenブランド』 2021/03/08 糖質制限や低糖質ダイエットに大注目の 「サラシア」 人気のマヌカロゼンジが 乳酸菌入りのど飴 NEWS 2020/08/21 【マヌカハニーの除草剤残留報道による風評被害につきまして】 2020/05/29 【ご注文いただいたお客様へ】"
+    },
+    {
+        "thought": "",
+        "action": "ExtractHyperlink",
+        "action_input": "https://noniweb.jp/",
+        "observation": "[('https://noniweb.jp/shopdetail/000000000059', 'こちらから！'), ('https://noniweb.jp/shopdetail/000000000091', 'こちらから！'), ('https://noniweb.jp/shopdetail/000000000090', 'こちらから！'), ('https://noniweb.jp/shopbrand/ct29/', 'こちらから！'), ('https://noniweb.jp/shopdetail/000000000076/noni/page1/order/', 'こちらから！'), ('https://noniweb.jp/shopdetail/000000000069/abm/page1/order/', 'こちら'), ('https://noniweb.jp/shopbrand/ct26/', 'こちら'), ('https://noniweb.jp/shopdetail/000000000064/abm/page1/order/', 'こちら'), ('https://noniweb.jp/ssl/popup_mailmagazine.html?db=hyperlinks', ''), ('https://paypay.ne.jp/', '')]"
+    },
+    {
+        "thought": "",
+        "action": "AccessURL",
+        "action_input": "https://paypay.ne.jp/",
+        "observation": "You must first access the URL using the AccessURL tool before you can use this tool."
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://paypay.ne.jp/",
+        "observation": "PayPay-A cashless payment smartphone app that pays with a QR code  Open and close the menu Top Usable shops How to use PayPay Beginner's Guide campaign coupon financial services FAQ Notice open To the store Introduction to physical stores Introduction to online store Introduction of self-payment (vending machine) To stores Quick & Easy​ Download the PayPay app >> What is PayPay? SCROLL All you need is your smartphone to pay No more wallets!​​ Show barcode Scan QR code Registration of payment information is required in order to use the service. Packet communication fees will be charged according to the data you use for this service. Sign up for free! It will only take as little as 1 minute! Signing up is simple & easy,​ Bank account Credit card ATM Other top up methods Why use PayPay? registered user *1 Use at stores all over Japan PayPay can be used at various stores nationwide, including convenience stores, drug stores, and restaurants. Available also for online services and bill payments. Browse stores that accept PayPay Spend and save on shopping ​ Earn PayPay points Check campaigns Safe & secure payments In addition to implementing measures to protect information and prevent unauthorized use, we also offer a compensation system *2 Our security measures Share your balance You can easily send your balance to someone far away. ​ How to send your balance Besides shopping From paying utility bills, ordering delivery, to the investment experience, you can use a variety of functions from the PayPay app! See available features According Our Company research as of March 2024 Compensation may not be possible if the victim is intentional or has gross negligence. It can be used at various member stores nationwide! Also for online stores and payment of utility bills Stores nationwide Online services Utility bill payment By verifying your identity PayPay with identity verification Once you verify your identity, you can use all PayPay functions and services. About identity verification Great deals and convenience Without touching the cash Even if your hands are full Even if you are far away If you get a coupon in advance close With PayPay, you can make hygienic and smart payments without touching cash with just one smartphone. Pay at the store Even if you have a lot of luggage or you can't take your hands off with children, PayPay makes it easy to pay with one hand. You can easily send your balance to family and friends who are far away. You can change the theme and comments, so you can feel the same. Let's send with PayPay If you get a coupon in advance, you will be automatically granted benefits even if you do not show it at the time of payment. As little as one minute! STEP 1 Download the app Download the PayPay app​ Top up your balance Register a bank account or credit card. Alternatively, you can top up by cash from a Seven Bank ATM and a Lawson Bank. Show your QR code at the store. How to get started with PayPay Frequently Asked Questions Is it free to sign up with PayPay? Signing up with PayPay is free. However, please be aware that packet communication fees will be charged according the amount of data you consume when using the app. Is there an age restriction? If the user is a minor, the user must obtain the consent of his or her legal representative before using the balance. Which banks can be registered with PayPay? Currently, we support over 1,000 financial institutions How to register a bank account What is the balance? You can use it for shopping in units of 1 yen. It can also be used for shopping at PayPay member stores and online shopping such as PayPay official stores. About balance Can I top up using cash? You can top up up your balance with cash from Seven Bank ATMs and Lawson Bank ATMs. How to top up​ Is there a usage limit? There is a maximum amount you can spend when making payments, top up your balance, or sending your balance to a friend. Additionally, the maximum payment amount varies depending on the payment method. About the maximum usage limit What is the recommended operating system? To use the PayPay app, you need a device (a registered smartphone) that can receive an SMS authentication code. Recommended operating system I have trouble logging in ​ If you have forgotten your password and cannot log in, you can reset your password. Cannot log in/Reset password Other frequently asked questions Offers Campaign list News TOP Share this page Now Apple, the Apple logo, and the App Store are registered trademarks of Apple Inc. in the United States and other countries. Google Play is a trademark of Google LLC. QR code is a registered trademark of DENSO WAVE INCORPORATED. For Users About PayPay Safety Initiatives Official store List of special features For Stores Introduce PayPay to your store top page cost Implementation Method case study Download materials Cashless Institute Introduction to online stores / vending machines PayPay for Developers Corporate Customers gift card PayPay Balance API PayPay Corporation Company Profile Press Release Employment information Product Blog PayPay Inside-Out Check the latest information! support Terms of Use of Use / Guidelines LINE Yahoo Group Code of Conduct Privacy Policy About user privacy About user security Website Terms of Use Policy for antisocial forces Solicitation policy Basic policy on money laundering, etc. 日本語 English Language Translated by AI"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "false",
+            "scam_type": "N/A",
+            "reason": "None of the characteristics of a scam website are present on this website."
+        }
+    }
+]

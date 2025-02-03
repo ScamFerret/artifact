@@ -1,0 +1,30 @@
+[
+    {
+        "thought": "I need to access the URL first",
+        "action": "AccessURL",
+        "action_input": "https://www.h-haider.de/",
+        "observation": "Navigating to https://www.h-haider.de/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://www.h-haider.de/",
+        "observation": "Airbrush-Studio München der Shop für Airbrushbedarf und Lackreparatur  Unsere Geschäftszeiten und Ladenöffnungszeiten bitte hier Tel.: +49 (0)89 / 609 97 08 airbrush@h-haider.de Airbrush-Technik Airbrush Pistolen Airbrush Kompressoren Airbrush- Video, DvD, Buch Airbrush für Modellbau Airbrush Design Airbrush-Tanning Solarium/H3> Airbrush Kosmetik makeup Airbrush und Lackierpistole Airbrush-Lotion Tanninglotion, Bräunungslotion Airbrush München und Ottobrunn Airbrush-Bedarf und Zubehör/H3> Lackreparatur Lackschaden selbst ausbessern und reparieren Autolackpflege Lackieren spritzen Lack selber reparieren/H3> lackschaden beseitigen Modellbaufarbe lackreparatur mit airbrush airbrush makeup online stöbern und bestellen in weit über 6000 Airbrush-Artikeln alle Artikel mit ausführlicher Beschreibung und vielen Tipps mit vielen Stereobildern, Videos und 3D-Animationen informieren Sie sich über Spezialgebiete wie Make up, Tanning, Zögern Sie bitte nicht ... (letzter update: 31.05.2022) (online Fachhandel für Airbrush-Zubehör) 001 Airbrush-Shop (Dienstleistung) 002 Airbrush-Bräunung (Lotionen und Zubehör) 003 (Lackier- und Airbrush-Technik) 004 Gebrauchtmarkt 005 Unser Kurs-Angebot 006 (Impressum, Anfahrt usw.) 009 über uns 015 016 022 Bitte beachten Sie, dass wir seit unserem 25jährigen Firmenjubiläum ab einem Bestellwert von 50.-Euro keine Versandkosten Airbrush, Airbrushstudio, Airbrush Design, Airbrush Tanning, Airbrushmake up, Airbrushbedarf, shop, Zubehör, Airbrushpistole,"
+    },
+    {
+        "thought": "",
+        "action": "ExtractHyperlink",
+        "action_input": "https://www.h-haider.de/",
+        "observation": "[('http://www.airbrushtanning.de', '002  Airbrush-Bräunung'), ('https://www.h-haider.de/spraytanning.htm', '003  Airbrush-Bräunung')]"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "None",
+            "reason": "The URL does not have any scam website characteristics."
+        }
+    }
+]

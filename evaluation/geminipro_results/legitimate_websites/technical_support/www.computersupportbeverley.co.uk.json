@@ -1,0 +1,30 @@
+[
+    {
+        "thought": "I should first check if the URL can be accessed.",
+        "action": "AccessURL",
+        "action_input": "https://www.computersupportbeverley.co.uk/",
+        "observation": "Navigating to https://www.computersupportbeverley.co.uk/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://www.computersupportbeverley.co.uk/",
+        "observation": "Computer Support - Beverley  Computer Support Help! Our Services About Us Location Opinions A local, family-run Can you help? Generally, yes! We repair and service laptops and desktops alike, PCs or Macs, Windows or Linux, Android or iOS. Whatever your problem, we will strive to help you. We are fully equipped to handle all typical problems, and even many unusual ones - Still running Mac OS 9? Need data recovering from a 5.25\" Floppy disk? Give us a call! When are you open? Our workshop is open 5 days a week - opening 10:00AM until 4:00PM Monday through Friday. Our staff take the weekend off to recharge in time for Monday! Monday to Friday: 10:00 AM - 4:00 PM Weekends: Closed How much will this cost? services 01482 865371"
+    },
+    {
+        "thought": "",
+        "action": "ExtractHyperlink",
+        "action_input": "https://www.computersupportbeverley.co.uk/",
+        "observation": "[]"
+    },
+    {
+        "thought": "I now know the final answer. {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "false",
+            "scam_type": "null",
+            "reason": "The URL does not have any of the characteristics of a scam website."
+        }
+    }
+]

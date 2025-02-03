@@ -1,0 +1,36 @@
+[
+    {
+        "thought": "I should first access the URL to get its status code.",
+        "action": "AccessURL",
+        "action_input": "https://www.13sports.com/",
+        "observation": "Navigating to https://www.13sports.com/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractHyperlink",
+        "action_input": "https://www.13sports.com/",
+        "observation": "[('https://www.13sports.com/', ''), ('https://www.13sports.com/', 'HOME'), ('https://www.13sports.com/shop', '店舗案内'), ('https://www.13sports.com/flow', '注文までの流れ'), ('https://www.13sports.com/category/works', '製作実績'), ('https://www.13sports.com/print', 'プリント方法'), ('https://www.13sports.com/contact', 'ご注文・お問い合わせ'), ('https://ja-jp.facebook.com/13sports/', 'Facebook'), ('https://twitter.com/Thirteensports?ref_src=twsrc%5Etfw&ref_url=http%3A%2F%2Fwww.13sports-goalie.com%2F', 'Twitter'), ('https://www.instagram.com/13sportscustom/', 'Instagram'), ('https://www.13sports-goalie.com/', ''), ('https://www.13sports.jp/', ''), ('https://www.13sports.com/policy', 'プライバシーポリシー'), ('https://www.13sports.com/sitemap', 'サイトマップ')]"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://www.13sports.com/",
+        "observation": "サーティーンスポーツ｜ユニフォームのカスタム｜滋賀県  HOME 店舗案内 商品紹介 ユニフォーム チームウェア グローブ / パンツ / ゴーリー用品 バッグ/アクセサリー他 注文までの流れ 製作実績 プリント方法 特定商取引法の表示 ご注文・お問い合わせ Facebook Twitter Instagram search メニュー開閉 営業時間 12:00～19:00 定休日 火曜日・木曜日 TEL 077-500-2074 ABOUT US サーティーンスポーツについて チームユニフォームなど サーティーンスポーツは、チームユニフォーム製作やカスタム防具のご注文など、お客様の様々なご要望にお応えします。 ご注文の流れについて NEWS お知らせ 2022/07/25 ジュニア応援価格でユニフォーム作製いたします！ WORK Bauer-shell 昇華ユニフォーム4 CCMジャケット 練習ジャージ 製作実績をもっと見る Products UNIFORM ユニフォーム、ゲームジャージなど チームジャージ、練習ジャージ、ソックスなどのカスタムが可能です。豊富なバリエーションからお好みのスタイルをお選びください。 詳しくはこちら WEAR ジャケットやパンツなど ジャケットやパンツといったウェアを各種取り揃えております。チームロゴや背番号の刺繍・プリントが可能です。 EQUIPMENT プレイヤー防具、ゴーリー防具など グローブ・パンツ・ゴーリー防具などのカスタムオーダーを承ります。国内では市販されていないモデルの取り扱いも。 OTHER その他 各種バッグのカスタムや、ロゴ入り練習パック・ステッカー製作など、各種小物も取り扱っています。 Contact お問い合わせ サーティーンスポーツへのご注文、お問い合わせはお電話または専用のフォームより受け付けております。 専用フォームはこちら 営業時間 12:30～19:30 定休日 火曜日・木曜日 所在地 〒520-2123 アクセス JR「瀬田駅」より車で約10分 駐車場 有り（151台） 製品販売についてはこちらをご覧ください プライバシーポリシー サイトマップ Copyright © サーティーンスポーツ All Rights Reserved."
+    },
+    {
+        "thought": "",
+        "action": "GetSearchResult",
+        "action_input": "\"13sports.com scam\"",
+        "observation": "[{'url': 'https://www.bbb.org/article/news-releases/30022-bbb-scam-alert-scammers-are-impersonating-businesses-emailing-consumers-with-fake-subscription-renewal-notices', 'content': 'BBB Scam Tracker has received several recent reports about scammers impersonating different businesses through email. One consumer shared, \"Received an email on 1/3/2024 that \"my Sirius XM ...'}, {'url': 'https://www.consumerreports.org/electronics-computers/streaming-media/free-unauthorized-sports-streams-scam-and-malware-risks-a6861379264/', 'content': 'Stanley, a 39-year-old from New York City, regularly combs platforms like Discord, Reddit, and Telegram to find free sports streams to keep tabs on the Jags, the rest of the NFL, and practically ...'}, {'url': 'https://news.yahoo.com/northern-california-law-enforcement-issues-230414533.html', 'content': '(FOX40.COM) — Several businesses have been contacted by an organization called Spartan Sports that is pretending to raise money for local youth, according to the Mariposa County Sheriff\\'s Office.•Video Above: Scams circulating in California On Friday, MCSO issued a \"scam alert\" about the group. Spartan Sports allegedly told prospective donors that it is raising funds […]'}, {'url': 'https://www.bbb.org/article/scams/27465-bbb-tip-be-aware-of-sports-streaming-scams', 'content': 'By Better Business Bureau. September 14, 2023. (Getty) You used to have to go to the stadium to root on your local high school athletic team. However, the COVID-19 pandemic changed that. With ...'}, {'url': 'https://www.scamvoid.net/', 'content': 'Find a list of most viewed website reports of this month. Use this service to check the online reputation of a website, check if a website is safe or a scam, check if a website is safe to buy from, check if a website is legit and trusted by other users.'}]"
+    },
+    {
+        "thought": "I now know the final answer URL is not a scam website.",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "false",
+            "scam_type": "N/A",
+            "reason": "None of the scam website characteristics are present."
+        }
+    }
+]

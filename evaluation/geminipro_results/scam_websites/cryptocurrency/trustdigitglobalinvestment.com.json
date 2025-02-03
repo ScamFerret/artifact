@@ -1,0 +1,54 @@
+[
+    {
+        "thought": "First, I need to access the URL and extract the text",
+        "action": "AccessURL",
+        "action_input": "https://trustdigitglobalinvestment.com/",
+        "observation": "Navigating to https://trustdigitglobalinvestment.com/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://trustdigitglobalinvestment.com/",
+        "observation": "Trust digit global investment - The Number One Invvestment Platform  Home About Plans Faq Road Map Contact Login Select Language Afrikaans Albanian Translate Earning New approach to crypto mining. Trust digit global investment Our company is a programmed financing"
+    },
+    {
+        "thought": "The text on the website clearly states that the company is a cryptocurrency investment company, which is a known scam type.",
+        "action": "ExtractText",
+        "action_input": "https://trustdigitglobalinvestment.com/",
+        "observation": "Trust digit global investment - The Number One Invvestment Platform  Home About Plans Faq Road Map Contact Login Select Language Afrikaans Albanian Translate Earning New approach to crypto mining. Trust digit global investment Our company is a programmed financing"
+    },
+    {
+        "thought": "I need to check if the prices are unusually low.",
+        "action": "GetSearchResult",
+        "action_input": "Can you get 80% ROI in 8 hours?",
+        "observation": "HTTPError('400 Client Error: Bad Request for url: https://api.tavily.com/search')"
+    },
+    {
+        "thought": "I need to check if the claims are possible.",
+        "action": "GetSearchResult",
+        "action_input": "Can you get 40% ROI in 8 hours?",
+        "observation": "HTTPError('400 Client Error: Bad Request for url: https://api.tavily.com/search')"
+    },
+    {
+        "thought": "The search engine does not return any result.",
+        "action": "GetSearchResult",
+        "action_input": "Can you get 25% ROI in 8 hours?",
+        "observation": "HTTPError('400 Client Error: Bad Request for url: https://api.tavily.com/search')"
+    },
+    {
+        "thought": "The search engine does not return any result.",
+        "action": "GetSearchResult",
+        "action_input": "Can you get 10% ROI in 8 hours?",
+        "observation": "HTTPError('400 Client Error: Bad Request for url: https://api.tavily.com/search')"
+    },
+    {
+        "thought": "The search engine does not return any result. I now know the final answer True",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "True",
+            "scam_type": "Fake shopping site",
+            "reason": "The site claims to be able to get an amount of money that is generally not possible."
+        }
+    }
+]

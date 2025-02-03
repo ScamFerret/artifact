@@ -1,0 +1,36 @@
+[
+    {
+        "thought": "I need to find out if the URL is scam website or not",
+        "action": "AccessURL",
+        "action_input": "https://hustlehard.co.uk/",
+        "observation": "Navigating to https://hustlehard.co.uk/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://hustlehard.co.uk/",
+        "observation": "Hustle Hard Learn Forex, Stocks and Crypto Trading  Skip to content learn, trade, earn, repeat . . Open Live Trading Account Demo Trading Account eShop Crypto Helper Prop Firm Funding 1 to 1 Complete Trading Course “If you’re not trading or learning how to invest. You will eventually pay” Warren Buffet Berkshire Holdings trading tips, guides, news on forex, stocks and crypto How to Open a Trading Account | 2024 Jan 4, 2024 — Trading Tips Don’t complicate the process, make trading simple Risk Management Bitcoin Fully Explained Dec 20, 2023 Crypto Mastering Day Trading: A Strategic Guide for Maximum Profits , How to know what type of trader you are Beginners guide to risk management What to look for in trading fundamentals Hustle Hard® Trading Experts Info Privacy Policy Contact Us Social YouTube Instagram TikTok"
+    },
+    {
+        "thought": "",
+        "action": "SearchX/Twitter",
+        "action_input": "hustlehard.co.uk",
+        "observation": "None"
+    },
+    {
+        "thought": "",
+        "action": "RetrieveWHOIS",
+        "action_input": "hustlehard.co.uk",
+        "observation": "{'domain': 'hustlehard.co.uk', 'servername': '', 'tld': 'co.uk', 'registered': True, 'reserved': False, 'client_hold': False, 'detail': {'registrant': [], 'admin': [], 'tech': [], 'billing': [], 'status': [], 'date': [], 'name_server': []}, 'raw': ['', 'Domain name:', 'hustlehard.co.uk', '', 'Data validation:', \"Nominet was able to match the registrant's name and address against a 3rd party data source on 08-Jan-2024\", '', 'Registrar:', '123-Reg Limited t/a 123-reg [Tag = 123-REG]', 'URL: https://www.123-reg.co.uk', '', 'Relevant dates:', 'Registered on: 23-Apr-2020', 'Expiry date:  23-Apr-2024', 'Last updated:  05-Dec-2023', '', 'Registration status:', 'Registered until expiry date.', '', 'Name servers:', 'ns1.krystal.co.uk         77.72.0.11', 'ns2.krystal.co.uk         139.162.230.184', '', 'WHOIS lookup made at 07:27:08 21-Apr-2024', '', '--', 'This WHOIS information is provided for free by Nominet UK the central registry', 'for .uk domain names. This information and the .uk WHOIS are:', '', 'Copyright Nominet UK 1996 - 2024.', '', 'You may not access the .uk WHOIS or use any data from it except as permitted', 'by the terms of use available in full at https://www.nominet.uk/whoisterms,', 'which includes restrictions on: (A) use of the data for advertising, or its', 'repackaging, recompilation, redistribution or reuse (B) obscuring, removing', 'or hiding any or all of this notice and (C) exceeding query rate or volume', \"limits. The data is provided on an 'as-is' basis and may lag behind the\", 'register. Access may be withdrawn or restricted at any time.']}"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "None",
+            "reason": "//hustlehard.co.uk/ is a scam website."
+        }
+    }
+]

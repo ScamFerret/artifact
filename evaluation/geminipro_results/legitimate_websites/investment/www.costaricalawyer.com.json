@@ -1,0 +1,36 @@
+[
+    {
+        "thought": "I should first access the website and extract the text to see if it contains any of the scam website characteristics.",
+        "action": "ExtractText",
+        "action_input": "https://www.costaricalawyer.com/",
+        "observation": "Top Costa Rica Lawyer Free Legal Consultation Meléndez & Bonilla Law Firm  Professional Services Free Consultation The Meléndez & Bonilla Law Firm stands out from the other law firms in Costa Rica because of its experience accumulated during considerable years of work in the area of family law, immigration law, labor law, and business law. The firm knows these laws, their uses, their normal applications, and the jurisprudence of these areas of law. The law firm of Meléndez & Bonilla is one of the top ranked law firms in Costa Rica and Central America with the highest standards of service and skill. Our law firm offers consultant services and legal representation in all areas of the law including family law, immigration law, labor law, international law, corporation law, business law, and tax law as it applies to new or established Costa Rican business firms and individuals. Immigration, Residency Family, Marriage, Divorce Labor, Hiring, Pay Corporation and Business Marielos Meléndez H. J.D. LL.D. Email Lawyer@CostaRicaLawyer.com Request Information We have created a modern law firm with a strong commitment to a long-term relationship with our clients. Our lawyers are multilingual and professional. We have many foreign clients that come to Costa Rica to relocate to a peaceful country for retirement, residency, or for business. We provide all legal services for  your commercial matters and the areas of legislation that relate to your company. Some areas are labor, administrative rights,  tributary, licenses, patents, and traffic. Also, Notary Services for the legalization of any legal instrument, consulting for legal actions and contracts, the emission of certifications, title searches and the inscription steps to register property and titles are also available. At Meléndez & Bonilla Law Firm you get both the individualized service that you would with a private lawyer plus the expertise of a big law firm that can handle commercial litigation at the international level. We offer our clients full immigration and residency services as well as relocation help for individuals and companies. Our services include  immigration permissions for individuals, retirement, family members, investors, and work permits for foreign workers that your company may need. Retirement Foreign income Investment We offer  our services for all family matters. Many people get married in Costa Rica and we provide marriage services and prenuptial   agreements. Unfortunately,   some lead to separation   and divorce and we provide legal services for child support, alimony, and visitation rights. Marriage Divorce Prenuptial   agreement Labor, Hiring, Firing, Pay, Vacations We pride ourselves   on our reputation to complete litigation cases for employees and employers in the matters of employment and labor law. We provide representation in cases of discrimination, harassment, retaliation, non-compete agreements, wrongful termination, employment contracts, and more. Our firm allows you to arm yourself with the knowledge of your rights under the labor laws. Training and seminars Due diligence and auditing Labor litigation Corporation Formation, Business Law, Regulations There are many things to be considered while setting up a new business, especially an offshore one. For one, you would need an experienced consultant or a consultancy firm who can assist you fully and properly with your objectives of forming an offshore corporation. The Law Office of Meléndez and Bonilla will be able to provide you with high quality complete turnkey assistance and legal advice in the process of forming a business corporation in Costa Rica. We offer legal advice   in all areas that concern or affect your company, and all aspects of the law that involve commercial activity. The formation of companies, private and public Sociedad Anónima S.A. and Sociedad de Responsabilidad Limitada S.R.L. Power of attorney, general and specific Top of page English Español Français"
+    },
+    {
+        "thought": "The text does not contain any of the scam website characteristics, so I should check the hyperlink.",
+        "action": "ExtractHyperlink",
+        "action_input": "https://www.costaricalawyer.com/",
+        "observation": "You must first access the URL using the AccessURL tool before you can use this tool."
+    },
+    {
+        "thought": "",
+        "action": "AccessURL",
+        "action_input": "https://www.costaricalawyer.com/",
+        "observation": "Navigating to https://www.costaricalawyer.com/ returned status code 200"
+    },
+    {
+        "thought": "I should now extract the hyperlink again.",
+        "action": "ExtractHyperlink",
+        "action_input": "https://www.costaricalawyer.com/",
+        "observation": "[('https://www.costaricalawyer.com/', ''), ('https://wa.me/50660814545', ''), ('https://www.costaricalawyer.com/', 'English'), ('https://www.costaricaabogado.com/', 'Español'), ('https://www.costaricaavocat.com/', 'Français'), ('https://www.costaricaavvocato.com/', 'Italiano'), ('https://www.costaricaanwaltskanzlei.com/', 'Deutsch'), ('https://www.costaricaadvogado.com/', 'Português'), ('https://www.costaricalawyerru.com/', 'Pусский'), ('https://www.costaricalawyercn.com/', '简体中文'), ('https://www.costaricalawyertw.com/', '繁体中文'), ('https://www.costaricalawyeril.com/', 'עִברִית'), ('https://www.costaricalawyer.com/', 'Home')]"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "None",
+            "reason": "I did not find any of the scam website characteristics from the given URL."
+        }
+    }
+]

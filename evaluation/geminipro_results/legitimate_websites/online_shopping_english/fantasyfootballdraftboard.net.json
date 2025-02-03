@@ -1,0 +1,24 @@
+[
+    {
+        "thought": "I should first access the URL to get the status code",
+        "action": "AccessURL",
+        "action_input": "https://fantasyfootballdraftboard.net/",
+        "observation": "Navigating to https://fantasyfootballdraftboard.net/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://fantasyfootballdraftboard.net/",
+        "observation": "2024 Fantasy Football Draft Board + Labels | Offline Fantasy Draft Kit"
+    },
+    {
+        "thought": "the website is not selling products. False",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "false",
+            "scam_type": "None",
+            "reason": "The website does not sell any products."
+        }
+    }
+]

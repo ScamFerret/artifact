@@ -1,0 +1,48 @@
+[
+    {
+        "thought": "Let's first access the URL to see if the URL is accessible.",
+        "action": "AccessURL",
+        "action_input": "http://beta.exchange.stockfund.co/",
+        "observation": "Navigating to http://beta.exchange.stockfund.co/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "http://beta.exchange.stockfund.co/",
+        "observation": "Home - domain expired  beta.exchange.stockfund .co This Domain is NOT Suspended Anymore This domain has all already been restored and not Suspended"
+    },
+    {
+        "thought": "",
+        "action": "ExtractHyperlink",
+        "action_input": "http://beta.exchange.stockfund.co/",
+        "observation": "[('http://www.go.co/register/?src=SuspensionPage&searchurl=beta.exchange.stockfund.co', ''), ('https://www.go.co', ''), ('https://www.go.co', 'www.go.co'), ('http://www.cointernet.com.co', 'www.cointernet.com.co'), ('https://www.go.co/legal.php', 'Terms'), ('https://www.go.co/privacy_policy.php', 'Privacy Policy')]"
+    },
+    {
+        "thought": "",
+        "action": "GetSearchResult",
+        "action_input": "beta.exchange.stockfund.co",
+        "observation": "[{'url': 'https://www.investopedia.com/terms/s/smart-beta-etf.asp', 'content': 'Smart Beta ETF: A smart Beta ETF is a type of exchange-traded fund that uses alternative index construction rules instead of the typical cap-weighted index strategy, in a transparent way. It takes ...'}, {'url': 'https://money.usnews.com/funds/etfs/large-blend/jpmorgan-betabuilders-us-equity-etf/bbus', 'content': 'The underlying index is a free float adjusted market capitalization weighted index which consists of equity securities primarily traded in the United States. The underlying index targets 85% of ...'}, {'url': 'https://www.ishares.com/us/strategies/smart-beta-investing', 'content': \"There are five factors that have historically proven to be drivers of return, and iShares offers ETFs that seek to capture all five: There's Quality, which identifies companies with strong and healthy balance sheets. Minimum Volatility, or stocks that are less volatile than the broad market. Size, which targets smaller, more nimble companies.\"}, {'url': 'https://www.investopedia.com/ask/answers/031715/how-does-beta-reflect-systematic-risk.asp', 'content': 'A beta between 0 and 1 signifies that it moves in the same direction as the market, but with less volatility—that is, smaller percentage changes—than the market as a whole. A beta of 1 ...'}, {'url': 'https://money.usnews.com/investing/articles/smart-beta-etfs-to-buy-now', 'content': \"That being said, smart beta ETFs aren't just found at Avantis. Numerous other firms, including Dimensional Fund Advisors, Invesco Ltd. (ticker: IVZ ), BlackRock Inc.'s ( BLK) iShares, Charles ...\"}]"
+    },
+    {
+        "thought": "",
+        "action": "RetrieveWHOIS",
+        "action_input": "stockfund.co",
+        "observation": "{'domain': 'stockfund.co', 'servername': '', 'tld': 'co', 'registered': True, 'reserved': False, 'client_hold': False, 'detail': {'registrant': [], 'admin': [], 'tech': [], 'billing': [], 'status': [], 'date': [], 'name_server': []}, 'raw': ['Number of allowed queries exceeded.']}"
+    },
+    {
+        "thought": "",
+        "action": "RetrieveCertificate",
+        "action_input": "stockfund.co",
+        "observation": "[{'issuer_ca_id': 183267, 'issuer_name': \"C=US, O=Let's Encrypt, CN=R3\", 'common_name': 'blog.blog.wordpress.stockfund.co', 'name_value': 'blog.blog.wordpress.stockfund.co', 'id': 4641202180, 'entry_timestamp': '2021-06-03T18:46:04.853', 'not_before': '2021-06-03T17:46:04', 'not_after': '2021-09-01T17:46:04', 'serial_number': '03b0f0fa959189104bc185a45d6fbde8af27', 'result_count': 1}, {'issuer_ca_id': 183267, 'issuer_name': \"C=US, O=Let's Encrypt, CN=R3\", 'common_name': 'blog.blog.wordpress.stockfund.co', 'name_value': 'blog.blog.wordpress.stockfund.co\\nwww.blog.blog.wordpress.stockfund.co', 'id': 4641196421, 'entry_timestamp': '2021-06-03T18:46:04.629', 'not_before': '2021-06-03T17:46:04', 'not_after': '2021-09-01T17:46:04', 'serial_number': '03b0f0fa959189104bc185a45d6fbde8af27', 'result_count': 3}, {'issuer_ca_id': 183267, 'issuer_name': \"C=US, O=Let's Encrypt, CN=R3\", 'common_name': 'blog.aaa.aaa.stockfund.co', 'name_value': 'blog.aaa.aaa.stockfund.co\\nwww.blog.aaa.aaa.stockfund.co', 'id': 4641102256, 'entry_timestamp': '2021-06-03T18:25:25.316', 'not_before': '2021-06-03T17:25:25', 'not_after': '2021-09-01T17:25:25', 'serial_number': '043271af04d30541537c1941be4560bc8df9', 'result_count': 3}, {'issuer_ca_id': 183267, 'issuer_name': \"C=US, O=Let's Encrypt, CN=R3\", 'common_name': 'blog.aaa.aaa.stockfund.co', 'name_value': 'blog.aaa.aaa.stockfund.co\\nwww.blog.aaa.aaa.stockfund.co', 'id': 4641095290, 'entry_timestamp': '2021-06-03T18:25:25.22', 'not_before': '2021-06-03T17:25:25', 'not_after': '2021-09-01T17:25:25', 'serial_number': '043271af04d30541537c1941be4560bc8df9', 'result_count': 3}, {'issuer_ca_id': 183267, 'issuer_name': \"C=US, O=Let's Encrypt, CN=R3\", 'common_name': 'blog.old.office.stockfund.co', 'name_value': 'blog.old.office.stockfund.co\\nwww.blog.old.office.stockfund.co', 'id': 4640972111, 'entry_timestamp': '2021-06-03T17:59:19.148', 'not_before': '2021-06-03T16:59:18', 'not_after': '2021-09-01T16:59:18', 'serial_number': '03887cdc40c802874322fd02dc2c4bdba7fb', 'result_count': 3}]"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "None",
+            "reason": "'No information was found on the URL.'"
+        }
+    }
+]

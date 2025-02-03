@@ -1,0 +1,18 @@
+[
+    {
+        "thought": "I should first extract the text in the HTML to see if it contains any scam-related texts.",
+        "action": "ExtractText",
+        "action_input": "https://avortrade.com/cgi-sys/suspendedpage.cgi",
+        "observation": "Account Suspended  This Account has been suspended. Contact your hosting provider"
+    },
+    {
+        "thought": "I should first extract the text in the HTML to see if it contains any scam-related texts.",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "true",
+            "scam_type": "Fake shopping site",
+            "reason": "The website is suspended and does not contain any actual content. This suggests that it is a fake shopping site."
+        }
+    }
+]

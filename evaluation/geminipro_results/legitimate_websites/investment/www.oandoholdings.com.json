@@ -1,0 +1,60 @@
+[
+    {
+        "thought": "I should start by accessing the URL to check its status code",
+        "action": "AccessURL",
+        "action_input": "http://www.oandoholdings.com/",
+        "observation": "Navigating to http://www.oandoholdings.com/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "http://www.oandoholdings.com/",
+        "observation": "Ocean and Oil Holdings  About Us Company Profile Our Philosophy Board of Directors Our Services Contact We create and manage the best performing portfolio in Africa Learn More Principal Investment We work together to help you secure your financial future by delivering the best return for your risk profile Business Advisory We bring a unique local knowledge of the West African market & capitalize on emerging opportunities Human Capital Mgmt We offer personnel, procurement & management services to the Oil and Gas industry, Advisory & Real Estate sectors Real Estate We excel at property, asset management and real estate advisory services as Avante View All Services © Home About 8th Floor, The Octagon,"
+    },
+    {
+        "thought": "",
+        "action": "ExtractHyperlink",
+        "action_input": "http://www.oandoholdings.com/",
+        "observation": "[]"
+    },
+    {
+        "thought": "",
+        "action": "SearchX/Twitter",
+        "action_input": "\"oandoholdings.com\"",
+        "observation": "None"
+    },
+    {
+        "thought": "",
+        "action": "SearchReddit",
+        "action_input": "\"oandoholdings.com\"",
+        "observation": "[]"
+    },
+    {
+        "thought": "",
+        "action": "RetrieveWHOIS",
+        "action_input": "oandoholdings.com",
+        "observation": "{'domain': 'oandoholdings.com', 'servername': '', 'tld': 'com', 'registered': True, 'reserved': False, 'client_hold': False, 'detail': {'registrant': [], 'admin': [], 'tech': [], 'billing': [], 'status': [], 'date': [], 'name_server': []}, 'raw': ['IP Address Has Reached Rate Limit']}"
+    },
+    {
+        "thought": "",
+        "action": "RetrieveDNSRecord",
+        "action_input": "oandoholdings.com",
+        "observation": ""
+    },
+    {
+        "thought": "",
+        "action": "RetrieveCertificate",
+        "action_input": "oandoholdings.com",
+        "observation": "[{'issuer_ca_id': 904, 'issuer_name': 'C=US, ST=Arizona, L=Scottsdale, O=\"GoDaddy.com, Inc.\", OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2', 'common_name': 'oohmail.oandoholdings.com', 'name_value': 'autodiscover.oandoholdings.com\\nmail.oandoholdings.com\\nooh-005.oandoholdings.com\\noohmail.oandoholdings.com\\nwww.oohmail.oandoholdings.com', 'id': 2692058382, 'entry_timestamp': '2020-04-12T15:44:15.419', 'not_before': '2020-04-12T15:44:13', 'not_after': '2022-06-11T13:06:17', 'serial_number': '00c2bd4deb7ce8f4b8', 'result_count': 6}, {'issuer_ca_id': 904, 'issuer_name': 'C=US, ST=Arizona, L=Scottsdale, O=\"GoDaddy.com, Inc.\", OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2', 'common_name': 'oohmail.oandoholdings.com', 'name_value': 'autodiscover.oandoholdings.com\\nmail.oandoholdings.com\\nooh-005.oandoholdings.com\\noohmail.oandoholdings.com\\nwww.oohmail.oandoholdings.com', 'id': 1747364071, 'entry_timestamp': '2019-08-07T02:44:08.713', 'not_before': '2019-07-24T07:05:20', 'not_after': '2020-06-11T13:06:17', 'serial_number': '780ccaa6af2bf03e', 'result_count': 6}, {'issuer_ca_id': 904, 'issuer_name': 'C=US, ST=Arizona, L=Scottsdale, O=\"GoDaddy.com, Inc.\", OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2', 'common_name': 'oohmail.oandoholdings.com', 'name_value': 'autodiscover.oandoholdings.com\\nmail.oandoholdings.com\\nooh-005.oandoholdings.com\\noohmail.oandoholdings.com\\nwww.oohmail.oandoholdings.com', 'id': 1702097015, 'entry_timestamp': '2019-07-24T07:05:20.89', 'not_before': '2019-07-24T07:05:20', 'not_after': '2020-06-11T13:06:17', 'serial_number': '780ccaa6af2bf03e', 'result_count': 6}, {'issuer_ca_id': 904, 'issuer_name': 'C=US, ST=Arizona, L=Scottsdale, O=\"GoDaddy.com, Inc.\", OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2', 'common_name': 'oohmail.oandoholdings.com', 'name_value': 'autodiscover.oandoholdings.com\\nmail.oandoholdings.com\\nooh-005.oandoholdings.com\\noohmail.oandoholdings.com\\nwww.oohmail.oandoholdings.com', 'id': 540704986, 'entry_timestamp': '2018-06-20T22:44:39.601', 'not_before': '2018-06-11T13:06:17', 'not_after': '2020-06-11T13:06:17', 'serial_number': '511f6045a5a1e1eb', 'result_count': 6}, {'issuer_ca_id': 904, 'issuer_name': 'C=US, ST=Arizona, L=Scottsdale, O=\"GoDaddy.com, Inc.\", OU=http://certs.godaddy.com/repository/, CN=Go Daddy Secure Certificate Authority - G2', 'common_name': 'oohmail.oandoholdings.com', 'name_value': 'autodiscover.oandoholdings.com\\nmail.oandoholdings.com\\nooh-005.oandoholdings.com\\noohmail.oandoholdings.com\\nwww.oohmail.oandoholdings.com', 'id': 519621811, 'entry_timestamp': '2018-06-11T13:07:07.711', 'not_before': '2018-06-11T13:06:17', 'not_after': '2020-06-11T13:06:17', 'serial_number': '511f6045a5a1e1eb', 'result_count': 6}]"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "None",
+            "reason": "The website does not exhibit any of the characteristics of a scam website."
+        }
+    }
+]

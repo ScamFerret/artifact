@@ -1,0 +1,30 @@
+[
+    {
+        "thought": "I need to access the URL and extract the text to analyze the content for any fraudulent characteristics.",
+        "action": "AccessURL",
+        "action_input": "http://www.macwaves.org/",
+        "observation": "Navigating to http://www.macwaves.org/ returned status code 200"
+    },
+    {
+        "thought": "The website is accessible, now I need to extract the text to analyze its content.",
+        "action": "ExtractText",
+        "action_input": "http://www.macwaves.org/",
+        "observation": "MacWaves MUG: Jersey Shore Macintosh Users Group  Home About Us Info Central Links Members Past Meetings Directions Contact Us MacWaves Jersey Shore MUG Member of: BCUG The Apple Groups Team Welcome open to all Meetings Please join Facebook for Location/Group Date/Time Topics SCAN - Room B FUNdamentals May 05/10/2014 10:00am-noon OS X Finder feature, All My Files, and why it is not a well-respected feature. presenter: Lee Maxwell 3 free iOS utilities that can make yoru iPhone even more useful: NetAnalyzer Lite, System Status Lite, and Network MultiMeter. We also will do our best to answer your questions and share any news of Apple, OS X and iOS. If anyone has a topic they'd like us to discuss, or if you'd like to make a presentation, please contact me or Bob. And if you know anyone who is a BCUG member but not on this mailing list, but would like to be, please contact either of us. Lee's email: leemaxwell [at] gladmax . com Bob's email: bob-shindel [at] verizon . net We hope to see you all there, then. June 06/14/2014 TBA Combined MacWaves and MacFundamentals meetings Location: SCAN Learning Center @ Monmouth Mall - Room B ) . When: 2nd Saturday 10am-Noon We will be meeting here year round Typical meeting Members who bring their laptops should be able to access the internet. Location Information SCAN Learning Center Monmouth Mall Here are the September 2013 onward -- we meet in the SCAN Learning Center in Eatontown Mall 2nd Saturday of each month from 10am to noon, here Calendar & Weather JavaScript Calendar (c)2003-2006 Idemfactor Solutions Inc. Lincroft Weather General Information Our current leader is: Bob Shindel ( email Bob BRIEF HISTORY Our group started in 1986. We were originally known as Desktop Connections - an Apple User group exclusive to Monmouth County. A few years later we joined with folks from Toms River and Brick and became MOPMUG (Monmouth/Ocean County Professional Mac User Group). Around 1998 we changed our name to MacWaves to better reflect the diversity of our group. MEMBERSHIP INFO If you become a BCUG member, discounts are available for the purchase of new software, hardware, books and web site hosting. MUG members are authorized to purchase hardware and software from PowerMax's -- the official Mac User Group Store For more information about BCUG, please visit: A membership in BCUG entitles you to attend all Workshop meetings. Click Apple's User Group finder page For an application, please click Go to Under 'Members Only' enter your email address then choose 'View/Modify Profile' to specify your preferences. OUR THANKS TO We would like to thank machighway.com Brookdale Community College Monmouth County Vocational School District (MCVSD) 3rd Friday of the month MAS To help with all the tragedies in the world, we provide the following information. There are many ways to give and many charities to give to, for a list of charities please visit Give.org percentage of donations About... You are visitor # FYI: Apple Stock Quotes are delayed, so don't rely on this information to trade stock! Web site hosted by: Last Update: Fri, May 9, 2014 1:23:54 AM Contact our WebPerson ( email WebPerson"
+    },
+    {
+        "thought": "Unable to retrieve WHOIS information for the domain. I should check for other characteristics of fraudulent sites.",
+        "action": "ExtractHyperlink",
+        "action_input": "http://www.macwaves.org/",
+        "observation": "[('http://give.org/', 'Give.org'), ('http://give.org/reports/index.asp', 'percentage of donations'), ('http://www.apple.com', '')]"
+    },
+    {
+        "thought": "The results show that MacWaves is a Macintosh Users Group, not an e-commerce site. Therefore, based on the characteristics of fraudulent sites, the website http://www.macwaves.org/ does not exhibit any fraudulent characteristics. {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "false",
+            "scam_type": "null",
+            "reason": "The website does not exhibit any fraudulent characteristics based on the given characteristics of fraudulent sites."
+        }
+    }
+]

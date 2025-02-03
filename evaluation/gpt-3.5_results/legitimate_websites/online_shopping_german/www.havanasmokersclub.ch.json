@@ -1,0 +1,30 @@
+[
+    {
+        "thought": "First, I need to access the URL to obtain a status code.",
+        "action": "AccessURL",
+        "action_input": "https://www.havanasmokersclub.ch/shop/index.php",
+        "observation": "Navigating to https://www.havanasmokersclub.ch/shop/index.php returned status code 200"
+    },
+    {
+        "thought": "The website is accessible. Now I need to extract the text and check for any signs of a scam.",
+        "action": "ExtractText",
+        "action_input": "https://www.havanasmokersclub.ch/shop/index.php",
+        "observation": "Zigarren Online Shop für anspruchsvolle Zigarrengeniesser  Wir verwenden Cookies Einstellungen Datenschutzerklärung ablehnen akzeptieren Cookies sind kleine Textinformationen, welche in Ihrem Browser gespeichert werden und welche auch bei weiteren Besuchen noch zur Verfügung stehen. Hiermit können wir z.B. den Warenkorb über mehrere Klicks hinweg beibehalten und ihnen Ihre Sprache, Währung, Lieferland und Versandart Einstellungen beim nächsten Besuch gleich wieder korrekt übernehmen. Im Cookie selbst befinden sich keine Personen bezogenen Daten. In den meisten Browsern finden Sie Einstellungen um Cookies anzusehen und gegebenenfalls wieder zu löschen. Erforderlich Performance Marketing Auswahl akzeptieren 0 Menu Zigarren Afrika Zigarren Costa Rica Zigarren Cuba Zigarren Dom. Republik Zigarren Honduras Zigarren Mexiko Zigarren Nicaragua Zigarren World of Davidoff NEU im Shop Aktionen Ausverkauf/Restbestände Zigarren-Sets zur Degustation Geschenk-Gutscheine Havana Prämien Club Humidore Humidorzubehör Raucherzubehör Kunst aus Kuba CHF € Artikel hinzugefügt Artikel Weiter einkaufen Warenkorb Kasse Ihr Warenkorb ist leer! Jetzt profitieren: Zigarren im Ausverkauf und letzte Restbestände zum Bestpreis! CNN Cuban No Name - In Kuba Zigarren ab CHF 12.90 / Stk. zum Angebot Perla Del Mar - Kubanische Nicarao - Classico, Nicarao New Brand - Liga Privada 10 Selección de Mercada Im September 2023 erhält die Liga Privada 10 Selección de Mercado von Drew Estate an der Inter Tabac in Dortmund Der preisgünstige und qualitätsbewusste Zigarren Online Shop 20 Jahre HavanaSmokersClub.ch Bestpreisangebot persönliche und kompetente Beratung schnelle Lieferzeiten Diese Neuheiten warten, von Ihnen probiert zu werden. mehr -> L'Atelier - Surrogates Die « Knochenbrecher CHF 10.65 / Stk. Die neue Kraft - Die Camacho Broadleaf Neu aufgelegt: D Aktionen, die sich lohnen: zur Übersicht -> Perla del Mar Connecticut - Double Toro nur CHF 9.60 / Stk. Skel Ton - Xrelaxx ab CHF 281.00 / 25er Jar Casa Magna - Gigantor Kubanische Zigarren: Für viele Raucher dieser Welt haben die kubanischen Zigarren einen einzigartigen Stellenwert. Ähnlich wie der Wein durch seine Lage, dem Boden und dem Mikroklima geprägt wird, gilt dies auch beim Tabak. Das beste kubanische Rohmaterial findet man im Vuelta Abajo, einem fruchtbaren Tal im Westen der Insel. Daraus entstehen mit dem Hintergrund einer 700jährigen Tradition des Zigarrendrehens oftmals Legenden auf dem Weg zur Geschichte. Die hohe, kubanische Messlatte wurde oft als Ansporn von Zigarrenproduzenten in anderen Ländern angenommen. Auch wanderten während den ersten Jahren des Sozialismus in Kuba 1959 viele begabte Zigarrenmacher aus. Nicht nur brachten sie viel Know-How in neue Tabakregionen, oft auch gleich kubanisches Saatgut. Dank der zusätzlich sehr ähnlichen Boden- und Klimabeschaffenheit entstehen heute in Nicaragua oft aussergewöhnliche Zigarren mit grosser Kuba-Affinität. Zeit für Neues: Obwohl jeder Zigarrenliebhaber meist seine Vorlieben kennt und sich dementsprechend darauf abstimmt, ist es immer wieder interessant zu beobachten, welche Produkte sich neu auf dem Markt zu etablieren versuchen. Hier finden Sie stets die neusten Artikel, welche wir erst kürzlich in unser Sortiment aufgenommen haben. Verschaffen Sie sich einen Überblick über neue Formate, Marken, angesagte Raucherutensilien, moderne Humidore und vieles mehr. Restbestände und Ausverkauf: Erst gerade noch auf dem Markt, und vielleicht auch lieb gewonnen, schon will es das Schicksal, dass sie nicht mehr aufzufinden sind. Zigarren, welche limitiert in Produktion gingen, oder Zigarren, die nicht mehr produziert werden oder aus anderen Gründen den Weg nicht mehr in unser Land finden. Für Sie jetzt die Gelegenheit die letzten Einzelzigarren zum Bestpreis zu ergattern. Kategorien Infoseiten Zigarren aus der Dom. Rep. Humidor kaufen Kuba-Zigarren Newsletter Jetzt anmelden und von 5 % Rabatt bei Ihrer nächsten Bestellung profitieren. Währung Havana Smokers Club GmbH Zahlungsarten Wir versenden durch Infocenter Produkte-Infos Kunden werben Kunden AGB Impressum"
+    },
+    {
+        "thought": "I need to check for any signs of a scam based on the characteristics of scam websites.",
+        "action": "RetrieveWHOIS",
+        "action_input": "havanasmokersclub.ch",
+        "observation": "{'domain': 'havanasmokersclub.ch', 'servername': '', 'tld': 'ch', 'registered': True, 'reserved': False, 'client_hold': False, 'detail': {'registrant': [], 'admin': [], 'tech': [], 'billing': [], 'status': [], 'date': [], 'name_server': []}, 'raw': ['Requests of this client are not permitted. Please use https://www.nic.ch/whois/ for queries.', '']}"
+    },
+    {
+        "thought": "Based on the observations, the website does not exhibit the characteristics of a scam website. The domain is registered and there are no obvious signs of scam behavior. Therefore, the final answer is: {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "false",
+            "scam_type": "null",
+            "reason": "The website does not exhibit any of the characteristics of a scam website. The domain is registered and there are no red flags indicating scam behavior."
+        }
+    }
+]

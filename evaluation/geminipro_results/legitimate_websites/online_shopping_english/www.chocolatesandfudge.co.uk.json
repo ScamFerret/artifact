@@ -1,0 +1,36 @@
+[
+    {
+        "thought": "I should check if the site is accessible",
+        "action": "AccessURL",
+        "action_input": "https://www.chocolatesandfudge.co.uk/",
+        "observation": "Navigating to https://www.chocolatesandfudge.co.uk/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://www.chocolatesandfudge.co.uk/",
+        "observation": "This site is brand new  Please check back again soon"
+    },
+    {
+        "thought": "",
+        "action": "RetrieveWHOIS",
+        "action_input": "chocolatesandfudge.co.uk",
+        "observation": "{'domain': 'chocolatesandfudge.co.uk', 'servername': '', 'tld': 'co.uk', 'registered': True, 'reserved': False, 'client_hold': False, 'detail': {'registrant': [], 'admin': [], 'tech': [], 'billing': [], 'status': [], 'date': [], 'name_server': []}, 'raw': ['', 'Domain name:', 'chocolatesandfudge.co.uk', '', 'Data validation:', \"Nominet was able to match the registrant's name and address against a 3rd party data source on 17-Aug-2019\", '', 'Registered through:', 'All Web Services Ltd', 'URL: https://www.allwebservices.co.uk', '', 'Registrar:', '20i Ltd [Tag = STACK]', 'URL: http://www.20i.com', '', 'Relevant dates:', 'Registered on: 12-Feb-2001', 'Expiry date:  12-Feb-2025', 'Last updated:  12-Feb-2024', '', 'Registration status:', 'Registered until expiry date.', '', 'Name servers:', 'ns1.stackdns.com', 'ns2.stackdns.com', 'ns3.stackdns.com', 'ns4.stackdns.com', '', 'WHOIS lookup made at 22:33:38 14-Apr-2024', '', '--', 'This WHOIS information is provided for free by Nominet UK the central registry', 'for .uk domain names. This information and the .uk WHOIS are:', '', 'Copyright Nominet UK 1996 - 2024.', '', 'You may not access the .uk WHOIS or use any data from it except as permitted', 'by the terms of use available in full at https://www.nominet.uk/whoisterms,', 'which includes restrictions on: (A) use of the data for advertising, or its', 'repackaging, recompilation, redistribution or reuse (B) obscuring, removing', 'or hiding any or all of this notice and (C) exceeding query rate or volume', \"limits. The data is provided on an 'as-is' basis and may lag behind the\", 'register. Access may be withdrawn or restricted at any time.']}"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://www.chocolatesandfudge.co.uk/",
+        "observation": "This site is brand new  Please check back again soon"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "null",
+            "reason": "The website is not yet available so the fraudulent check cannot be performed."
+        }
+    }
+]
