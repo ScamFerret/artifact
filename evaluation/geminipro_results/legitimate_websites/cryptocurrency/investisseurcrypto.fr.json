@@ -1,0 +1,24 @@
+[
+    {
+        "thought": "I should get the text from the URL.",
+        "action": "ExtractText",
+        "action_input": "https://investisseurcrypto.fr/",
+        "observation": "Accueil - Investisseurcrypto.fr Investisseur crypto vous propose ses formations en crypto-monnaies et vous informe du cours de la crypto-monnaie via les réseaux sociaux et notre application dédié.  Accueil Crypto actu Analyse Nos Formations Application À propos Apprentissage Contact Menu La crypto éveille votre curiosité ?"
+    },
+    {
+        "thought": "I should check if there is information on a non-existent company.",
+        "action": "ExtractHyperlink",
+        "action_input": "https://investisseurcrypto.fr/",
+        "observation": "[('https://investisseurcrypto.fr/', 'Politique de confidentialité')]"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "false",
+            "scam_type": "None",
+            "reason": "I could not find enough evidence to prove this is a scam."
+        }
+    }
+]

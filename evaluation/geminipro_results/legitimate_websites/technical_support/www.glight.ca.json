@@ -1,0 +1,30 @@
+[
+    {
+        "thought": "I should check if the URL is accessible first.",
+        "action": "AccessURL",
+        "action_input": "https://www.glight.ca/",
+        "observation": "Navigating to https://www.glight.ca/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://www.glight.ca/",
+        "observation": "Home | Greenlight Tech  Client Login Business Technical Support Why Us? Not just another technical support company, this is why we are better: Our technical experience is unmatched Our technical staff have a minimum 10 years, full time, in-this-field experience. This means we get it done quicker, and right the first time. With no staff turn over in 7 years: you don't pay us to learn and relearn your network. Our priority is you Our staff do not have quotas or targets. We don't have partnerships with companies that require minimum sales. Our recommendations are based on technical considerations, not industry relationships. We work for you, and represent your interests in everything we do. Set it and forget it We take care of your network as if it was our network. From self-healing network systems to regular tasks like updates - it all gets done transparently so you can concentrate on what you do. Predictive and Budgetable Expenses No hourly charges. No banked hours. No surprises. One dependable flat rate for all of your computer service as if we were a member of your staff. That means in your hour of need we are focused on helping you quickly, not profitting from your misfortune. I now understand why you came so highly recommended. Enno Gill Ancaster, ON We've come to depend on you for these types of things ... thank you for making it an easy transition. Sonia Rai Toronto, ON Thank you. Thank you. THANK YOU! You've helped me out of a real bind and I won't forget it! Micheal Chiarelli Hamilton, ON Frequently Asked Questions Is my business too small for Greenlight Tech? Whether you are just starting out, or prefer running your"
+    },
+    {
+        "thought": "I should check if the website has any suspicious hyperlinks.",
+        "action": "ExtractHyperlink",
+        "action_input": "https://www.glight.ca/",
+        "observation": "[('http://creativecommons.org/licenses/by-nc-nd/4.0/', 'BY-NC-ND-4.0')]"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "None",
+            "reason": "I did not find any red flags that would suggest this website is a scam."
+        }
+    }
+]

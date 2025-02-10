@@ -1,0 +1,54 @@
+[
+    {
+        "thought": "First, I should see if the website is accessible.",
+        "action": "AccessURL",
+        "action_input": "https://www.americanhelpdesk.com/",
+        "observation": "Navigating to https://www.americanhelpdesk.com/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractHyperlink",
+        "action_input": "https://www.americanhelpdesk.com/",
+        "observation": "[('https://www.facebook.com/americanhelpdesk', ''), ('https://twitter.com/american_help', ''), ('https://www.youtube.com/channel/UC_xxTNGyMJIApikp8aHPQOQ', ''), ('https://www.linkedin.com/company/american-helpdesk', ''), ('https://www.facebook.com/americanhelpdesk', ''), ('https://twitter.com/american_help', ''), ('https://www.youtube.com/channel/UC_xxTNGyMJIApikp8aHPQOQ', ''), ('https://www.linkedin.com/company/american-helpdesk', '')]"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://www.americanhelpdesk.com/",
+        "observation": "Helpdesk Services, 24/7, Technical Support, Financial Help Desk, Medical  Call Us : 1-800-997-0977 Toggle navigation Home About Technical Services Helpdesk Services Computer Helpdesk Services Hardware Helpdesk Software Helpdesk Bank and Financial Helpdesk Services Helpdesk Services for Schools Internet Helpdesk Website Navigational Assistance IT Outsourcing Computer Training Services Answering Services Call Center Services Appointment Setting / Scheduling Service Billing / Payment Support Order Processing / Fulfillment Dispatch Services Customer Relationship Management General Product Information and Support Warranty Support Services Survey Support Social Customer Service Client Success Manager Managed Services Data Recovery Services NOC  Service NOC  Lite ITSM Consultants Customers Careers Contact Technical Support American Help desk provides Technical Services including inbound tech support and more American Help Desk provides Non-Technical Services including call answering and virtual receptionist Call center service outsourcing is a low cost, efficient solution for offering 24/7/365 service CRM Customer Relationship Management or CRM, helps you stay connected to your customer base Managed Services from American Help Desk provide flexible and scalable IT operation support Website Navigation Website Login and Navigational Assistance support services from American Help Desk Welcome to Help desk services outsourcing provides your customers with our round-the-clock support, and dedicated customer care representatives, without the high costs associated with providing in-house help desk services. Request a quote Name  * Company  * Email  * Phone  * Requirements * Some of Our Valued Customers Memberships and Certifications American Help Desk offers 24/7 call center services, providing a variety of customer oriented solutions including: call center service outsourcing, technical support, sales, order-taking/fulfillment, billing inquiries, reservations, crisis resolution, call-logging, appointments, dispatching, training, customer service, troubleshooting and general product information support. 4560 Beltline Rd. Suite  #204 Addison, TX 75001 sales@americanhelpdesk.com 972-661-1611 © 2019 American Help Desk. All Rights Reserved. Click here to review our Privacy Policy Enter keywords to Search Product"
+    },
+    {
+        "thought": "",
+        "action": "SearchX/Twitter",
+        "action_input": "americanhelpdesk.com scam",
+        "observation": "None"
+    },
+    {
+        "thought": "",
+        "action": "GetSearchResult",
+        "action_input": "americanhelpdesk.com",
+        "observation": "[{'url': 'https://www.americanhelpdesk.com/', 'content': \"Call center service outsourcing enables your business to provide low-cost and effective help desk services with a dedicated and experienced team of professionals. American Help Desk is one of the nation's leading help desk service providers, with a proven track-record of assisting our clients and helping their businesses succeed.\"}, {'url': 'https://www.americanhelpdesk.com/medical.htm', 'content': 'Helpdesk Services, Pricing and Information Support: Toll-Free: 1-800-997-0977. For Additional information, as well as, pricing and options, please, contact our sales department: Sales@americanhelpdesk.com. Request a quote. American Help Desk provides dedicated Help desk services for hospitals, medical centers, health clinics and private doctor ...'}, {'url': 'https://www.americanhelpdesk.com/contact-us.html', 'content': 'Physical Address: 4560 Beltline Rd. Suite #204 Addison, TX 75001. Sales Consultants: 1-800-997-0977 972-661-1674 sales@americanhelpdesk.com Operation hours:'}, {'url': 'http://www.americanhelpdesk.com/services.htm', 'content': \"1-800-997-0977 sales@americanhelpdesk.com Installation Services American Help Desk offers a variety of installation services for businesses, schools, retail stores, doctor's offices, legal offices, small businesses, corporate clients and government offices. Contact one of our sales representatives for more information or to obtain a custom ...\"}, {'url': 'https://www.americanhelpdesk.com/about.html', 'content': \"American Help Desk. American Help Desk (AHD) is one of the nation's leading call center and support service organizations, with headquarters located in Dallas, Texas, in the heart of the Dallas-Fort Worth Metroplex. AHD enjoys strong financial stability with a senior management team that has been working together for more than 20 years.\"}]"
+    },
+    {
+        "thought": "",
+        "action": "ExtractHyperlink",
+        "action_input": "https://www.americanhelpdesk.com/about.html",
+        "observation": "You must first access the URL using the AccessURL tool before you can use this tool."
+    },
+    {
+        "thought": "I now know the final answer.",
+        "action": "ExtractText",
+        "action_input": "https://www.americanhelpdesk.com/",
+        "observation": "Helpdesk Services, 24/7, Technical Support, Financial Help Desk, Medical  Call Us : 1-800-997-0977 Toggle navigation Home About Technical Services Helpdesk Services Computer Helpdesk Services Hardware Helpdesk Software Helpdesk Bank and Financial Helpdesk Services Helpdesk Services for Schools Internet Helpdesk Website Navigational Assistance IT Outsourcing Computer Training Services Answering Services Call Center Services Appointment Setting / Scheduling Service Billing / Payment Support Order Processing / Fulfillment Dispatch Services Customer Relationship Management General Product Information and Support Warranty Support Services Survey Support Social Customer Service Client Success Manager Managed Services Data Recovery Services NOC  Service NOC  Lite ITSM Consultants Customers Careers Contact Technical Support American Help desk provides Technical Services including inbound tech support and more American Help Desk provides Non-Technical Services including call answering and virtual receptionist Call center service outsourcing is a low cost, efficient solution for offering 24/7/365 service CRM Customer Relationship Management or CRM, helps you stay connected to your customer base Managed Services from American Help Desk provide flexible and scalable IT operation support Website Navigation Website Login and Navigational Assistance support services from American Help Desk Welcome to Help desk services outsourcing provides your customers with our round-the-clock support, and dedicated customer care representatives, without the high costs associated with providing in-house help desk services. Request a quote Name  * Company  * Email  * Phone  * Requirements * Some of Our Valued Customers Memberships and Certifications American Help Desk offers 24/7 call center services, providing a variety of customer oriented solutions including: call center service outsourcing, technical support, sales, order-taking/fulfillment, billing inquiries, reservations, crisis resolution, call-logging, appointments, dispatching, training, customer service, troubleshooting and general product information support. 4560 Beltline Rd. Suite  #204 Addison, TX 75001 sales@americanhelpdesk.com 972-661-1611 © 2019 American Help Desk. All Rights Reserved. Click here to review our Privacy Policy Enter keywords to Search Product"
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "null",
+            "reason": "The website does not have any scam characteristics."
+        }
+    }
+]

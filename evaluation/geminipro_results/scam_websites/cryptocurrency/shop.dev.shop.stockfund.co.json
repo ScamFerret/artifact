@@ -1,0 +1,42 @@
+[
+    {
+        "thought": "I need to check if the website is about shopping",
+        "action": "ExtractHyperlink",
+        "action_input": "http://shop.dev.shop.stockfund.co/",
+        "observation": "[('http://www.go.co/register/?src=SuspensionPage&searchurl=shop.dev.shop.stockfund.co', ''), ('https://www.go.co', ''), ('https://www.go.co', 'www.go.co'), ('http://www.cointernet.com.co', 'www.cointernet.com.co'), ('https://www.go.co/legal.php', 'Terms'), ('https://www.go.co/privacy_policy.php', 'Privacy Policy')]"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "http://shop.dev.shop.stockfund.co/",
+        "observation": "Home - domain expired  shop.dev.shop.stockfund .co This Domain is NOT Suspended Anymore This domain has all already been restored and not Suspended"
+    },
+    {
+        "thought": "",
+        "action": "GetSearchResult",
+        "action_input": "shop.dev.shop.stockfund.co",
+        "observation": "[{'url': 'https://github.com/TobiasGleiter/second-hand-clothes-web-shop', 'content': 'Saved searches Use saved searches to filter your results more quickly'}, {'url': 'https://shopdev.co/ai', 'content': 'Sales Bot. Meet your new sales ally - the Sales Bot. Designed to enhance personalized customer interactions, this AI-driven solution is your 24/7 virtual sales representative. At shopdev, we specialize in creating bespoke AI and Machine Learning solutions that cater to your unique requirements. Get free Consultation!'}, {'url': 'https://flexiple.com/developers/dev-shops', 'content': \"Dev shops consist of agile product development teams. A typical dev shop employs several developers, product managers, designers, etc., to build their clients' products. They work on a delivery-based compensation model where you specify your requirements, and they own the end-to-end development of the product.\"}, {'url': 'https://shop.blakthumb.com/', 'content': 'Shop Blakthumb offers a range of cannabis products and accessories from trusted brands and growers. Explore our online store and find your perfect match.'}, {'url': 'https://medium.com/@connect_97380/the-world-of-dev-shops-a-guide-for-startups-162c85d1b741', 'content': 'A dev shop, or software development shop, provides software development as a service. They can deliver various products, including websites, web-based applications, or native apps. They can either ...'}]"
+    },
+    {
+        "thought": "",
+        "action": "RetrieveWHOIS",
+        "action_input": "shop.dev.shop.stockfund.co",
+        "observation": "{'domain': 'stockfund.co', 'servername': '', 'tld': 'co', 'registered': True, 'reserved': False, 'client_hold': False, 'detail': {'registrant': [], 'admin': [], 'tech': [], 'billing': [], 'status': [], 'date': [], 'name_server': []}, 'raw': ['Number of allowed queries exceeded.']}"
+    },
+    {
+        "thought": "",
+        "action": "RetrieveDNSRecord",
+        "action_input": "shop.dev.shop.stockfund.co",
+        "observation": ""
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "None",
+            "reason": "This website does not match any of the characteristics of a scam website."
+        }
+    }
+]

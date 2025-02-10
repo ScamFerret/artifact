@@ -1,0 +1,30 @@
+[
+    {
+        "thought": "First, I need to access the URL.",
+        "action": "AccessURL",
+        "action_input": "https://cybercapitalfx.ltd/",
+        "observation": "Navigating to https://cybercapitalfx.ltd/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "https://cybercapitalfx.ltd/",
+        "observation": "言語を選択  日本語 アイスランド語 翻訳 cybercapitalfx.ltd Home FAQ Our Company About Us Legal and Terms Investment Packages Cryptocurrency Pension Funds FOREX (PAMM/MAM) Affiliate My Account Open Account Acount Login cybercapitalfx.ltd Investments We pride ourselves in our guarantees, success and track record in the"
+    },
+    {
+        "thought": "The text of this site contains claims to be able to get an amount of money that is generally not possible.",
+        "action": "ExtractHyperlink",
+        "action_input": "https://cybercapitalfx.ltd/",
+        "observation": "[('https://wa.me/+447576443878', 'Message Us'), ('https://wa.me/+447576443878', '')]"
+    },
+    {
+        "thought": "The hyperlink of this site contains an inquiry phone number that is not appropriate for business use. True",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "True",
+            "scam_type": "Fake shopping site",
+            "reason": "The text of this site contains claims to be able to get an amount of money that is generally not possible. The hyperlink of this site contains an inquiry phone number that is not appropriate for business use."
+        }
+    }
+]

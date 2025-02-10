@@ -1,0 +1,30 @@
+[
+    {
+        "thought": "First we need to check if the website is accessible.",
+        "action": "AccessURL",
+        "action_input": "http://www.johnelliman.com.au/",
+        "observation": "Navigating to http://www.johnelliman.com.au/ returned status code 200"
+    },
+    {
+        "thought": "",
+        "action": "ExtractText",
+        "action_input": "http://www.johnelliman.com.au/",
+        "observation": "John Elliman Real Estate Agency  Home Search Listings Inspections Contact Us THE ULTIMATE $1,350,000 For Sale 60 THE Ridge, Wurruk, VIC, 3850 4 Beds 2 Baths 4 Parking View Listing CHARMING FAMILY HOME ON BEAUTIFUL LANSDOWNE STREET $725,000 16-18 Lansdowne Street, Sale, VIC, 3850 Search Options Maffra Sale Seaspray Suburb Select All Bedrooms 1+ 2+ Bathrooms All Categories House Unit Category Min Price $50000 $100000 Max Price $50 $100 Search JOHN ELLIMAN REAL ESTATE PTY. LTD. Our philosophy is simple Being a small, independent business allows you to deal with the principal of the office at all times, therefore, With over 30 years experience in the real estate industry, we are confident that our performance will speak for itself. Our philosophy is simple......."
+    },
+    {
+        "thought": "I now know the final answer.",
+        "action": "ExtractText",
+        "action_input": "http://www.johnelliman.com.au/",
+        "observation": "John Elliman Real Estate Agency  Home Search Listings Inspections Contact Us THE ULTIMATE $1,350,000 For Sale 60 THE Ridge, Wurruk, VIC, 3850 4 Beds 2 Baths 4 Parking View Listing CHARMING FAMILY HOME ON BEAUTIFUL LANSDOWNE STREET $725,000 16-18 Lansdowne Street, Sale, VIC, 3850 Search Options Maffra Sale Seaspray Suburb Select All Bedrooms 1+ 2+ Bathrooms All Categories House Unit Category Min Price $50000 $100000 Max Price $50 $100 Search JOHN ELLIMAN REAL ESTATE PTY. LTD. Our philosophy is simple Being a small, independent business allows you to deal with the principal of the office at all times, therefore, With over 30 years experience in the real estate industry, we are confident that our performance will speak for itself. Our philosophy is simple......."
+    },
+    {
+        "thought": "I now know the final answer {",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "False",
+            "scam_type": "N/A",
+            "reason": "The website does not exhibit any of the characteristics of a scam website."
+        }
+    }
+]

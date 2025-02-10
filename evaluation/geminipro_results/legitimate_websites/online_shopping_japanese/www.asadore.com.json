@@ -1,0 +1,24 @@
+[
+    {
+        "thought": "We can start by extracting the text from the website to check for any suspicious words or phrases",
+        "action": "ExtractText",
+        "action_input": "http://www.asadore.com/",
+        "observation": "朝どれドットコム　安斎ビル事業用物件  朝どれドットコム WWW.ASADORE.COM asadore.comのHPです。 情報サイトは増やしていきます 安斎ビル様のホームページはこちら 安斎旅人 ギター弾き語り オフィシャルページはこちら"
+    },
+    {
+        "thought": "The text does not contain any suspicious words or phrases.",
+        "action": "ExtractHyperlink",
+        "action_input": "http://www.asadore.com/",
+        "observation": "[('http://www.asadore.com/anzai/', '安斎ビル様のホームページはこちら'), ('http://www.asadore.com/tabito/', '安斎旅人 ギター弾き語り オフィシャルページはこちら')]"
+    },
+    {
+        "thought": "The hyperlinks do not contain any suspicious words or phrases. I now know the final answer True",
+        "action": "FinalAnswer",
+        "action_input": "N/A",
+        "observation": {
+            "result": "true",
+            "scam_type": "None",
+            "reason": "The website does not contain any suspicious words or phrases and the hyperlinks do not contain any suspicious words or phrases."
+        }
+    }
+]
