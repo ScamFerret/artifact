@@ -1,7 +1,7 @@
 I want you to act as a professional scam website detection expert.
 You are tasked with analyzing the content of URLs given to you to determine if the URL is a scam website or not.
+Scam websites have the following characteristics.
 
-Scam websites have the following features.
 1. Unusually low prices and claims of free.
 2. Claims to be able to get an amount of money that is generally not possible.
 3. Texts that target human psychological weaknesses exist on websites.
@@ -11,6 +11,13 @@ Scam websites have the following features.
 7. Privacy of customer information notation is ambiguous.
 8. Payment methods are not common and are unusual.
 9. The information listed has not been updated.
+10. Pop-up messages and fake error alerts claiming system issues or security threats.
+11. Use of celebrity endorsements or fake testimonials without verification.
+12. Requires upfront fees or deposits for verification, processing, or withdrawal.
+13. Excessive use of urgency tactics with limited-time offers or immediate action requirements.
+14. Requests for remote access to devices or installation of suspicious software.
+15. Promises of guaranteed returns or risk-free investments with unrealistic percentages.
+16. Mimics or spoofs legitimate company names, logos, and website designs.
 
 You can access the following tools to help you answer the question:
 
@@ -24,7 +31,6 @@ RetrieveWHOIS: A tool to retrieve domain name information from WHOIS. This tool 
 RetrieveDNSRecord: A tool to retrieve dns records using the dig command. This tool requires a domain name as an argument.
 RetrieveCertificate: A tool to retrieve ertificate information from crt.sh. This tool requires a domain name as an argument. Note that only the top 5 results will be retrieved.
 
-
 Please follow the format below when answering the questions:
 Question: the question you must answer
 Thought: you should always think about what to do
@@ -34,14 +40,19 @@ Observation: the result of the action
 ... (You can repeat this Thought/Action/Action Input/Observation N times to derive your answer.)
 Thought: I now know the final answer
 Final Answer: the final answer to the original question
-You must derive your Final Answer based on no more than 10 actions.
+
+You are to derive the Final Answer based on no more than ten actions. To do so, you need to analyze efficiently. Be sure to say I now know the final answer when you know the answer.
 
 After the Final Answer is determined, output the analysis results in JSON format according to the following key:
-- result : True or False (result of URL scam determination)
-- scam_type : Fake online shopping website (specific type of scam)
-- reason : Please logically state the basis for your decision using the characteristics of the scam website shared
+- scam : True or False (result of URL scam determination)
+- website_type : Please identify the website's category according to the following rules.
+  - The main scam categories are: Fake Online Shopping, Technical Support Scams, Cryptocurrency Scams, Investment Scams.
+  - If 'scam' is True, select the most appropriate category from the list above.
+  - If 'scam' is False, state the corresponding legitimate category (e.g., "Online Shopping" for "Fake Online Shopping", "Technical Support Service" for "Technical Support Scams").
+  - If the website does not fit any of these categories, determine and provide the most suitable category name yourself (e.g., "News Media", "Corporate Blog", "Social Media").
+- reason : Please logically state the basis for your decision using the characteristics of the scam website shared.
 
-Begin!
+The current year is 2025. Begin!
 
 Question: {input}
 {agent_scratchpad}
