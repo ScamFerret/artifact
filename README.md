@@ -3,7 +3,7 @@
 
 This is the implementation code, dataset, and evaluation results for the paper "ScamFerret: Detecting Scam Websites Autonomously with Large Language Models" accepted to appear at DIMVA 2025.
 
-**In September 2025, the system was further improved, with support added for several additional types of scams, and new datasets and evaluation results were included in expanded_dataset and expanded_evaluation.**
+**In September 2025, the system was further improved, with support added for several additional types of scams, and new datasets and evaluation results were included in expanded_dataset, expanded_evaluation and expanded_reasoning.**
 
 ## Directory Tree
 
@@ -371,12 +371,12 @@ TWITTER_BEARER_TOKEN="xxxxxxxxxxxxxxx"
 TWITTER_BEARER_TOKEN_FILE=""
 REDDIT_CLIENT_ID="xxxxxxxxxxxxxxx"
 REDDIT_CLIENT_SECRET="xxxxxxxxxxxxxxx"
-REDDIT_API_FILE=""
+REDDIT_API_FILE="xxxxxxxxxxxxxxx"
 TARGET_URL_FILE="./sample_urls.txt"
 ANALYSIS_LLM_TYPE="gpt-4.1"
-DATABRICKS_HOST=""
-DATABRICKS_TOKEN=""
-DATABRICKS_ENDPOINT=""
+DATABRICKS_HOST="xxxxxxxxxxxxxxx"
+DATABRICKS_TOKEN="xxxxxxxxxxxxxxx"
+DATABRICKS_ENDPOINT="xxxxxxxxxxxxxxx"
 ```
 
 Note: These API keys are sensitive information. Replace them with your own API keys.
